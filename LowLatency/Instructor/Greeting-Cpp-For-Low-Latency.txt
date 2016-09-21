@@ -1,0 +1,25 @@
+Hi everyone!
+
+I'm glad we'll have the opportunity to work together this weekend just before CppCon begins. For those who have not been at this conference before, know that you're in for a treat. For the others: welcome back!
+
+In the next two days, we'll walk through the various elements listed in the syllabus you signed for, which you'll find at http://cppcon.org/using-c-for-low-latency-systems/ if you want a reminder (which can be useful if you signed in a while ago).
+
+We will focus on those C++ facilities that help in writing low-latency code, and on the «how to profit from these tools and mechanisms» aspect. We'll also consider parts of C++ that can be used in such contexts, but require more care.
+
+I won't go into hardware details and I'll avoid platform-specifics as much as I can, due to the focus on C++ one can expect from a CppCon-related event. That does not mean I'm not open to discussing such things with you, of course, but it does mean the material you will receive will not go in that direction. We can discuss things that relate to non-C++ or indirectly-C++ topics either verbally during the conference, or through email if it requires some thought or exploration (use patricer@gmail.com for this, as of all my email addresses, it's the one with the best storage capacity).
+
+In practice, I tend to adapt course material to the comments I get. This means that you should feel free to write to me in order to signal typos, to ask for clarifications, to suggest things, etc. I might not do as you ask, but I often will try to accomodate you, and the material will get better through your feedback.
+
+Since I work evolutively, I'm will use the following shared folder where you have read access: https://drive.google.com/drive/folders/0B8Nts3Mlg8gDN2ZBZVlRSXVLUTQ?usp=sharing
+
+In that folder, you'll find a copy of this greeting, as well as a PDF version of the slides. The first PDF version of the slides will be put there sometime on Friday Sept. 16. I'll give the PDF documents «version names» such that you can grab a newer version as I add them. I will also put there a set of source files you can use as basis for experimentation.
+
+I will update the PDF document and I will adjust / add to the set of source files as we go along. These updates will probably continue during the week based on what personally I want to add, as well as based on your feedback. For this reason, I'll update the shared folder for at least a week following CppCon, and you'll be welcome to the updated versions of this material.
+
+Past a certain point, of course, I will close the shared folder since I do make a living from these training sessions, and consequently would like people to come to me / invite me instead of just using my online material. I hope you understand, and I hope you'll treat yourself to the updated material in the week following CppCon to make sure you have the latest version that will be available at that time.
+
+Please make sure you have with you everything you need to experiment with us. I'll try to make things agile and do live coding; I often do that directly on a chalkboard / a whiteboard, but you'll be quite numerous so we might have to restrict ourselves to computers in order for everyone to see what's going on and follow. I hope you'll find the slides useful, but I personally think class-time is a different experience than slide-reading-time, and will treat it as such. We will code together, try things, and discuss together. If you don't have tools to experiment with me, you might miss out on fun stuff.
+
+Oh, and you're totally entitled to disagree with me. That's good for science :)
+
+Thank you for taking the time to enjoy this training experience with me. I hope you'll like it!

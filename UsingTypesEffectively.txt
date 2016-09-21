@@ -1,0 +1,8 @@
+ - What is a type
+   - is 1 == true?
+
+- variants and optionals
+    - variants: add them
+
+-  char f(bool)
+    - 256 * 2

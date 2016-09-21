@@ -1,0 +1,42 @@
+1. Iterator invalidity
+ - Does std::swap/move preserve iterators?
+   - http://stackoverflow.com/questions/6438086/iterator-invalidation-rules
+   - http://stackoverflow.com/questions/4124989/does-stdvectorswap-invalidate-iterators/4125186#4125186
+   - http://stackoverflow.com/questions/11021764/does-moving-a-vector-invalidate-iterators
+
+2. forward list of objects vs vector of unique ptrs
+ - ChandlerC 'claimed' that vector is better because modern processors can prefetch better
+ - Any other thoughts?
+
+3. Comparing pointers to non array objects
+ - behaviour - unspecified
+ - http://stackoverflow.com/questions/9086372/how-to-compare-pointers
+ - for containers having pointers as keys and requiring ordering, std::less<> is specialized and is implementation defined
+
+4. std::move on a const object
+ - doing a std::move on a const object returns a reference (const T&&) which actually leads to copy constructor call!
+ - http://stackoverflow.com/questions/28595117/why-can-we-use-stdmove-on-a-const-object
+ - http://stackoverflow.com/questions/27810535/why-does-calling-stdmove-on-a-const-object-call-the-copy-constructor-when-pass
+
+5. use signed types to iterate in a loop
+ - optimizers take advantages of undefined behaviour caused by signed overflow very heavily (upt 20% difference!)
+ - http://stackoverflow.com/questions/1464174/size-t-vs-intptr-t
+
+6. Short object optimizations
+ - open addressing
+
+7. printf ("%p", ptr)
+ - http://stackoverflow.com/questions/2369541/where-is-p-useful-with-printf
+ - http://stackoverflow.com/questions/12633067/p-format-specifier-in-c
+
+8. segmented architectures. Quoting verbatim from Jimmy:
+ - "On Intel16 and some intel32 platforms, on memory models with more than 64k total memory, you had to use two registers to address memory, a special segment register and a general purpose offset register.
+ - Far pointers contained both and near pointers were just the offset
+ - Within an object it would usually be the same segment
+ - And different objects might be on different segments
+ - Doing arithmetic on segment registers is expensive and loading invalid segment registers could result in a fault
+ - So loading an invalid value into a pointer could segfault on like Xenix or Windows 3.1
+ - Or crash on DOS"
+
+9. unique ptrs are as efficient as normal pointers
+ - http://ideone.com/dZaDcy this is wrong! Both coliru and my (sandeep) box gave equivalent results

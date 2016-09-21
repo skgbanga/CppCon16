@@ -1,0 +1,15 @@
+- template normal programming
+
+   - variable template
+      -- exactly like static data member of a templated class. Just syntactic sugar.
+
+   - alias template
+      -- template <typename T>
+         using MyVec = std::vector<T>;
+
+   - partial specialization of function - specialize
+
+
+- explicit instantiation definition, extern
+
+- name mangling

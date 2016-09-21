@@ -1,0 +1,18 @@
+Only three data structures:
+ - vector
+ - set
+ - map
+
+
+vector move - iterator invalidation
+
+ - small size optimizations
+   - custom containers
+
+- vector of pointers VS forward_list
+
+- uintptr_t
+== pointer integer pair
+
+
+- use bitfields everywhere
