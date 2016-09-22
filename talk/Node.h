@@ -8,6 +8,5 @@ struct Node
    {  }
 
    T value {};
-   // fuck unique ptrs
    Node* next {nullptr};
 };

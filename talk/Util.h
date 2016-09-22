@@ -21,7 +21,6 @@ template <typename T>
 T* collision_point(T* head)
    // ideally should pass the transformation and predicate as function arguments
 {
-   // make interviewrs happy!
    if (!predicate(head))
       return head;
 
