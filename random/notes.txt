@@ -1,0 +1,48 @@
+BEST QUOTE - let's avoid bigotry in programming
+
+Quotes:
+ - Do not consider your users dumb
+ - <random> is the library what every other random library wants to be when it grows up - Bjarne
+ - you don't know where your code is going to end up. "You don't wait for someone to treat your code badly. All it takes is once, and if they get away with it that once... it will be used again"
+ - "Let not thy code introduce bias"
+ - There is a certain arrogance in our sort of profession (A good surgeon knows when not to cut, a good programmer should know when not to code)
+
+HISTORICAL CONTEXT
+Random numbers history
+ - middle square method (earliest known : 1200s)
+ - Monte carlo method (extensively used now)
+ - Ferranti Mark I computer - had instruction to generate 20 random bits - requested by Alan Turing
+
+ENGINE- is a means of obtaining a sequence of ideally unpredictable bits that are uniform
+ - The intent of the engine is to be a source of randomness for the distribution object
+
+10 default random engines
+ - one default engine (chosen by vendor)
+ - 9 nailed down engines based on well studied, scientific research.
+
+- are reproducible
+- can be compared
+- can be seeded
+- bit by bit portable
+
+URGB (Uniform random bit generator) - any type/object meeting a distribution's needs
+ENGINE - URGB + other requirements (listed above)
+
+RANDOM_DEVICE - (URGB) designed to be interface to environmental/physical source of randomness
+
+DISTRIBUTION - means of obtaining variats from such a sequence of bits
+ - distribution object produces a variate consisten with the distribution's result type and c'tor arguments
+
+- 20 distribution types in 5 families
+
+Design choices behind <random>
+ - engines can be matches with distributions - interoperability
+ - people can write their own
+
+Questions:
+1. Time to construct engine, distribution? Should they be constructed once like a singleton and used everywhere.
+ - treat your engine/distribution as first class citizens, and bound them together using pair/tuple and can provide a bind/lambda/functor when passing around these things
+2. If I want to mock out random for consistent unit tests, what are your recommendations?
+
+
+TODO(sgupta) variate iterator
